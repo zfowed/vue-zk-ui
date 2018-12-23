@@ -12,9 +12,19 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('./views/About.vue')
+      path: '/Button',
+      name: 'Button',
+      component: () => import('./views/Button.vue')
+    },
+    {
+      path: '/Input',
+      name: 'Input',
+      component: () => import('./views/Input.vue')
+    },
+    {
+      path: '/Select',
+      name: 'Select',
+      component: () => import('./views/Select.vue')
     }
   ]
 })

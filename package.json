@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:wc": "vue-cli-service build --target wc-async --dest lib --name zk ./src/packages/*.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

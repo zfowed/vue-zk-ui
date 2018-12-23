@@ -4,6 +4,10 @@ import router from './router'
 import store from './store'
 import './plugins/element.js'
 
+import ZkUI from '@/packages/index'
+
+Vue.use(ZkUI)
+
 Vue.config.productionTip = false
 
 new Vue({
