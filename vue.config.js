@@ -31,6 +31,7 @@ if (process.env.BUILD_MODE === 'packages') {
   }
 } else {
   VueConfig = {
+    baseUrl: './',
     outputDir: 'docs'
   }
 }
