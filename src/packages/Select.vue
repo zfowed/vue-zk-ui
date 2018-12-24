@@ -33,17 +33,15 @@ export default {
     .el-input {
       input {
         border-radius: 0;
-        padding-right: 40px;
+        padding-right: $--input-height;
       }
       .el-input__suffix {
         right: 0;
         background-color: #dcdfe6;
+        width: $--input-height;
         transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
         .el-select__caret {
           transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-        }
-        .el-input__suffix-inner {
-          padding: 0 7.5px;
         }
       }
       &:not(.is-disabled) input:hover + .el-input__suffix,
@@ -57,6 +55,30 @@ export default {
         background-color: $--color-primary !important;
         .el-select__caret {
           color: #FFFFFF;
+        }
+      }
+      &.el-input--medium {
+        input {
+          padding-right: $--input-medium-height;
+        }
+        .el-input__suffix {
+          width: $--input-medium-height;
+        }
+      }
+      &.el-input--small {
+        input {
+          padding-right: $--input-small-height;
+        }
+        .el-input__suffix {
+          width: $--input-small-height;
+        }
+      }
+      &.el-input--mini {
+        input {
+          padding-right: $--input-mini-height;
+        }
+        .el-input__suffix {
+          width: $--input-mini-height;
         }
       }
     }

@@ -76,31 +76,45 @@
 
     <h2>不同尺寸</h2>
     <el-card>
-      <zk-input placeholder="请输入内容" suffix-icon="el-icon-date" style="margin-right: 5px; width: 200px;"></zk-input>
-      <zk-input size="medium" placeholder="请输入内容" suffix-icon="el-icon-date" style="margin-right: 5px; width: 200px;"></zk-input>
-      <zk-input size="small" placeholder="请输入内容" suffix-icon="el-icon-date" style="margin-right: 5px; width: 200px;"></zk-input>
-      <zk-input size="mini" placeholder="请输入内容" suffix-icon="el-icon-date" style="margin-right: 5px; width: 200px;"></zk-input>
+      <el-row>
+        <zk-input placeholder="默认输入框" suffix-icon="el-icon-date" style="width: 200px;"></zk-input>
+      </el-row>
+      <el-row>
+        <zk-input size="medium" placeholder="中等输入框" suffix-icon="el-icon-date" style="width: 200px;"></zk-input>
+      </el-row>
+      <el-row>
+        <zk-input size="small" placeholder="小型输入框" suffix-icon="el-icon-date" style="width: 200px;"></zk-input>
+      </el-row>
+      <el-row>
+        <zk-input size="mini" placeholder="超小输入框" suffix-icon="el-icon-date" style="width: 200px;"></zk-input>
+      </el-row>
     </el-card>
 
     <h2>带输入建议</h2>
     <p>根据输入内容提供对应的输入建议</p>
     <el-card>
-      <zk-autocomplete
-        placeholder="激活即列出输入建议"
-        :fetch-suggestions="(s, c) => c([{value: '三全鲜食（北新泾店）', address: '长宁区新渔路144号' }, { value: '首尔炸鸡（仙霞路）', address: '上海市长宁区淞虹路661号' }])">
-      </zk-autocomplete>
-      <zk-autocomplete
-        placeholder="自定义模板"
-        :fetch-suggestions="(s, c) => c([{value: '三全鲜食（北新泾店）', address: '长宁区新渔路144号' }, { value: '首尔炸鸡（仙霞路）', address: '上海市长宁区淞虹路661号' }])">
-        <template slot-scope="{ item }">
-          <div>{{ item.value }}</div>
-          <span style="font-size: 12px;color: #b4b4b4;">{{ item.address }}</span>
-        </template>
-      </zk-autocomplete>
-      <zk-autocomplete
-        placeholder="远程搜索"
-        :fetch-suggestions="() => null">
-      </zk-autocomplete>
+      <el-row>
+        <zk-autocomplete
+          placeholder="激活即列出输入建议"
+          :fetch-suggestions="(s, c) => c([{value: '三全鲜食（北新泾店）', address: '长宁区新渔路144号' }, { value: '首尔炸鸡（仙霞路）', address: '上海市长宁区淞虹路661号' }])">
+        </zk-autocomplete>
+      </el-row>
+      <el-row>
+        <zk-autocomplete
+          placeholder="自定义模板"
+          :fetch-suggestions="(s, c) => c([{value: '三全鲜食（北新泾店）', address: '长宁区新渔路144号' }, { value: '首尔炸鸡（仙霞路）', address: '上海市长宁区淞虹路661号' }])">
+          <template slot-scope="{ item }">
+            <div>{{ item.value }}</div>
+            <span style="font-size: 12px;color: #b4b4b4;">{{ item.address }}</span>
+          </template>
+        </zk-autocomplete>
+      </el-row>
+      <el-row>
+        <zk-autocomplete
+          placeholder="远程搜索"
+          :fetch-suggestions="() => null">
+        </zk-autocomplete>
+      </el-row>
     </el-card>
 
   </div>

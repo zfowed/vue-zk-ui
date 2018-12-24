@@ -22,15 +22,6 @@
       </zk-select>
     </el-card>
 
-    <h2>可清空单选</h2>
-    <p>包含清空按钮，可将选择器清空为初始状态</p>
-    <el-card>
-      <zk-select v-model="value" clearable placeholder="请选择">
-        <zk-option label="黄金糕" value="选项1" />
-        <zk-option label="双皮奶" value="选项2" />
-      </zk-select>
-    </el-card>
-
     <h2>基础多选</h2>
     <p>包含清空按钮，可将选择器清空为初始状态</p>
     <el-card>
@@ -38,6 +29,34 @@
         <zk-option label="黄金糕" value="选项1" />
         <zk-option label="双皮奶" value="选项2" />
       </zk-select>
+    </el-card>
+
+    <h2>不同尺寸</h2>
+    <el-card>
+      <el-row>
+        <zk-select v-model="value2" placeholder="默认下拉框">
+          <zk-option label="黄金糕" value="选项1" />
+          <zk-option label="双皮奶" value="选项2" />
+        </zk-select>
+      </el-row>
+      <el-row>
+        <zk-select v-model="value2" size="medium" placeholder="中等下拉框">
+          <zk-option label="黄金糕" value="选项1" />
+          <zk-option label="双皮奶" value="选项2" />
+        </zk-select>
+      </el-row>
+      <el-row>
+        <zk-select v-model="value2" size="small" placeholder="小型下拉框">
+          <zk-option label="黄金糕" value="选项1" />
+          <zk-option label="双皮奶" value="选项2" />
+        </zk-select>
+      </el-row>
+      <el-row>
+        <zk-select v-model="value2" size="mini" placeholder="超小下拉框">
+          <zk-option label="黄金糕" value="选项1" />
+          <zk-option label="双皮奶" value="选项2" />
+        </zk-select>
+      </el-row>
     </el-card>
 
     <h2>自定义模板</h2>

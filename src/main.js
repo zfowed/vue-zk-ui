@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import './plugins/element.js'
 
-import ZkUI from '@/packages/index'
+import ZkUI from './packages/index'
 
 Vue.use(ZkUI)
 
@@ -15,3 +15,5 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+export default undefined
