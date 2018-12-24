@@ -29,6 +29,10 @@ if (process.env.BUILD_MODE === 'packages') {
       }
     }
   }
+} else {
+  VueConfig = {
+    outputDir: 'docs'
+  }
 }
 
 module.exports = VueConfig
