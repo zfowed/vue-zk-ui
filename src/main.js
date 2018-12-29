@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import mockjs from 'mockjs'
+
 // 初始 CSS 样式
 import 'normalize.css'
 
@@ -16,6 +18,8 @@ Vue.use(Components)
 Vue.use(ZkUI)
 
 Vue.config.productionTip = false
+
+Vue.prototype.$mockjs = mockjs
 
 new Vue({
   router,

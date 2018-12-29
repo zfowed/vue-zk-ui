@@ -9,6 +9,7 @@ export default new Router({
       path: '/',
       redirect: '/basic/color'
     },
+
     {
       path: '/basic/color',
       component: () => import('./views/basic/color.vue')
@@ -21,6 +22,7 @@ export default new Router({
       path: '/basic/button',
       component: () => import('./views/basic/button.vue')
     },
+
     {
       path: '/form/input',
       component: () => import('./views/form/input.vue')
@@ -29,6 +31,11 @@ export default new Router({
       path: '/form/select',
       component: () => import('./views/form/select.vue')
     },
+    {
+      path: '/form/cascader',
+      component: () => import('./views/form/cascader.vue')
+    },
+
     {
       path: '/**',
       redirect: '/'

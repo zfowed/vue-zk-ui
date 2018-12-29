@@ -38,6 +38,10 @@ export default {
           {
             label: 'Select 下拉框',
             index: '/form/select'
+          },
+          {
+            label: 'Cascader 级联选择器',
+            index: '/form/cascader'
           }
         ]
       }

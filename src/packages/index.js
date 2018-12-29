@@ -5,6 +5,7 @@ import Autocomplete from './autocomplete'
 import Select from './select'
 import Option from './option'
 import OptionGroup from './option-group'
+import Cascader from './cascader'
 
 const components = [
   Button,
@@ -13,7 +14,8 @@ const components = [
   Autocomplete,
   Select,
   Option,
-  OptionGroup
+  OptionGroup,
+  Cascader
 ]
 
 const install = function (Vue) {
@@ -33,7 +35,8 @@ export {
   Autocomplete,
   Select,
   Option,
-  OptionGroup
+  OptionGroup,
+  Cascader
 }
 
 export default {

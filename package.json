@@ -1,6 +1,6 @@
 {
   "name": "vue-zk-ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "lib/index.js",
   "scripts": {
     "serve": "vue-cli-service serve --mode production --port 8100",
@@ -9,9 +9,23 @@
     "build:packages": "vue-cli-service build --mode packages",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zfowed/vue-zk-ui.git"
+  },
+  "keywords": [
+    "vue-zk-ui"
+  ],
+  "author": "zfowed <zfowed@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zfowed/vue-zk-ui/issues"
+  },
+  "homepage": "https://github.com/zfowed/vue-zk-ui#readme",
   "dependencies": {
     "element-ui": "^2.4.5",
     "font-awesome": "^4.7.0",
+    "mockjs": "^1.0.1-beta3",
     "normalize.css": "^8.0.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
