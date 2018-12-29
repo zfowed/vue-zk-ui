@@ -1,10 +1,11 @@
 {
   "name": "vue-zk-ui",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "main": "lib/index.js",
   "scripts": {
     "serve": "vue-cli-service serve --mode production --port 8100",
-    "build": "vue-cli-service build --mode production",
+    "build": "npm run build:docs && npm run build:packages",
+    "build:docs": "vue-cli-service build --mode production",
     "build:packages": "vue-cli-service build --mode packages",
     "lint": "vue-cli-service lint"
   },

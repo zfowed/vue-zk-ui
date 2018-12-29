@@ -2,7 +2,7 @@
 export default {
   namespaced: true,
   state: {
-    title: 'DEMO',
+    title: '基于 Element 的 UI',
     windowWidth: 0,
     windowHeight: 0,
     collapse: true,
@@ -15,6 +15,10 @@ export default {
           {
             label: 'Color 颜色',
             index: '/basic/color'
+          },
+          {
+            label: 'Typography 字体',
+            index: '/basic/typography'
           },
           {
             label: 'Button 按钮',

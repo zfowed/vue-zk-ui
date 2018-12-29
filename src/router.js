@@ -14,6 +14,10 @@ export default new Router({
       component: () => import('./views/basic/color.vue')
     },
     {
+      path: '/basic/typography',
+      component: () => import('./views/basic/typography.vue')
+    },
+    {
       path: '/basic/button',
       component: () => import('./views/basic/button.vue')
     },
