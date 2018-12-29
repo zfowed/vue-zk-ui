@@ -1,10 +1,10 @@
-import Button from './Button'
-import ButtonGroup from './ButtonGroup'
-import Input from './Input'
-import Autocomplete from './Autocomplete'
-import Select from './Select'
-import Option from './Option'
-import OptionGroup from './OptionGroup'
+import Button from './button'
+import ButtonGroup from './button-group'
+import Input from './input'
+import Autocomplete from './autocomplete'
+import Select from './select'
+import Option from './option'
+import OptionGroup from './option-group'
 
 const components = [
   Button,
@@ -22,7 +22,6 @@ const install = function (Vue) {
   })
 }
 
-/* istanbul ignore if */
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }

@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
 Vue.use(Router)
 
@@ -8,23 +7,27 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      redirect: '/basic/color'
     },
     {
-      path: '/Button',
-      name: 'Button',
-      component: () => import('./views/Button.vue')
+      path: '/basic/color',
+      component: () => import('./views/basic/color.vue')
     },
     {
-      path: '/Input',
-      name: 'Input',
-      component: () => import('./views/Input.vue')
+      path: '/basic/button',
+      component: () => import('./views/basic/button.vue')
     },
     {
-      path: '/Select',
-      name: 'Select',
-      component: () => import('./views/Select.vue')
+      path: '/form/input',
+      component: () => import('./views/form/input.vue')
+    },
+    {
+      path: '/form/select',
+      component: () => import('./views/form/select.vue')
+    },
+    {
+      path: '/**',
+      redirect: '/'
     }
   ]
 })
