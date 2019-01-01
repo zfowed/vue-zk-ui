@@ -40,7 +40,8 @@ export default {
       padding: 0 20px;
       height: 44px;
       line-height: 44px;
-      background: linear-gradient(180deg, rgba(11,122,251,1), rgba(11,84,251,1));
+      // background: linear-gradient(180deg, $--color-primary, #0b54fb);
+      background: linear-gradient(180deg, $--color-primary, mix($--color-primary, black, 80%));
       .el-dialog__title {
         color: #FFFFFF;
         font-size: 16px;

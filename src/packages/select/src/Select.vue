@@ -80,6 +80,16 @@ export default {
         }
       }
     }
+    &[remote] {
+      .el-input {
+        input {
+          padding: 0 15px;
+        }
+        .el-input__suffix {
+          display: none;
+        }
+      }
+    }
   }
 }
 </style>

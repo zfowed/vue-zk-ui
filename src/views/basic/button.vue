@@ -19,6 +19,14 @@
         <zk-button type="danger" plain>危险按钮</zk-button>
       </el-row>
       <el-row>
+        <zk-button raised>凸起按钮</zk-button>
+        <zk-button type="primary" raised>主要按钮</zk-button>
+        <zk-button type="success" raised>成功按钮</zk-button>
+        <zk-button type="info" raised>信息按钮</zk-button>
+        <zk-button type="warning" raised>警告按钮</zk-button>
+        <zk-button type="danger" raised>危险按钮</zk-button>
+      </el-row>
+      <el-row>
         <zk-button round>圆角按钮</zk-button>
         <zk-button type="primary" round>主要按钮</zk-button>
         <zk-button type="success" round>成功按钮</zk-button>

@@ -29,7 +29,7 @@ export default {
       {
         label: 'Form 表单',
         index: '/form',
-        icon: 'fa fa-lg fa-fw fa-terminal',
+        icon: 'fa fa-lg fa-fw fa-bars',
         childers: [
           {
             label: 'Input 输入框',
@@ -48,7 +48,7 @@ export default {
       {
         label: 'Others 其他',
         index: '/others',
-        icon: 'fa fa-lg fa-fw fa-square',
+        icon: 'fa fa-lg fa-fw fa-bars',
         childers: [
           {
             label: 'Dialog 对话框',
