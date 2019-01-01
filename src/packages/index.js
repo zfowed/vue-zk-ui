@@ -6,6 +6,7 @@ import Select from './select'
 import Option from './option'
 import OptionGroup from './option-group'
 import Cascader from './cascader'
+import Dialog from './dialog'
 
 const components = [
   Button,
@@ -15,7 +16,8 @@ const components = [
   Select,
   Option,
   OptionGroup,
-  Cascader
+  Cascader,
+  Dialog
 ]
 
 const install = function (Vue) {
@@ -36,7 +38,8 @@ export {
   Select,
   Option,
   OptionGroup,
-  Cascader
+  Cascader,
+  Dialog
 }
 
 export default {

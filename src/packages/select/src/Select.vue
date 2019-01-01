@@ -1,13 +1,11 @@
 <template>
-  <el-select :popper-class="'zk-select-dropdown ' + popperClass"  :value="value" v-bind="$attrs" v-on="$listeners">
-    <slot></slot>
+  <el-select :popper-class="'zk-select-dropdown ' + popperClass" :value="value" v-bind="$attrs" v-on="$listeners">
+    <slot v-for="($slot, key) in $slots" :slot="key" :name="key"></slot>
   </el-select>
 </template>
 
 <script>
 import Select from 'element-ui/lib/select'
-
-// popper-class
 
 export default {
   name: 'ZkSelect',

@@ -11,7 +11,7 @@ export default {
   name: 'Page',
   props: {
     title: String,
-    description: String,
+    description: String
   }
 }
 </script>

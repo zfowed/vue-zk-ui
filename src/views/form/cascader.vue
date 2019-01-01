@@ -29,7 +29,7 @@ export default {
   data () {
     return Object.assign({
       selectedOptions: [],
-      selectedOptions2: [],
+      selectedOptions2: []
     }, this.$mockjs.mock({
       'options|10': [{
         'value': '@guid',

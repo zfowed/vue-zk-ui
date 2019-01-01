@@ -12,28 +12,33 @@ export default new Router({
 
     {
       path: '/basic/color',
-      component: () => import('./views/basic/color.vue')
+      component: () => import(/* webpackChunkName: "views_basic_color" */ './views/basic/color.vue')
     },
     {
       path: '/basic/typography',
-      component: () => import('./views/basic/typography.vue')
+      component: () => import(/* webpackChunkName: "views_basic_typography" */ './views/basic/typography.vue')
     },
     {
       path: '/basic/button',
-      component: () => import('./views/basic/button.vue')
+      component: () => import(/* webpackChunkName: "views_basic_button" */ './views/basic/button.vue')
     },
 
     {
       path: '/form/input',
-      component: () => import('./views/form/input.vue')
+      component: () => import(/* webpackChunkName: "views_form_input" */ './views/form/input.vue')
     },
     {
       path: '/form/select',
-      component: () => import('./views/form/select.vue')
+      component: () => import(/* webpackChunkName: "views_form_select" */ './views/form/select.vue')
     },
     {
       path: '/form/cascader',
-      component: () => import('./views/form/cascader.vue')
+      component: () => import(/* webpackChunkName: "views_form_cascader" */ './views/form/cascader.vue')
+    },
+
+    {
+      path: '/others/dialog',
+      component: () => import(/* webpackChunkName: "views_others_dialog" */ './views/others/dialog.vue')
     },
 
     {

@@ -72,10 +72,6 @@
   </app-page>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style lang="scss" scoped>
 pre {
   margin: 0;

@@ -44,6 +44,17 @@ export default {
             index: '/form/cascader'
           }
         ]
+      },
+      {
+        label: 'Others 其他',
+        index: '/others',
+        icon: 'fa fa-lg fa-fw fa-terminal',
+        childers: [
+          {
+            label: 'Dialog 对话框',
+            index: '/others/dialog'
+          }
+        ]
       }
     ]
   },

@@ -39,7 +39,7 @@
       </el-row>
       <el-row>
         <zk-input placeholder="请输入内容">
-          <zk-select value="1" slot="prepend" placeholder="请选择">
+          <zk-select style="width: 120px;" value="1" slot="prepend" placeholder="请选择">
             <zk-option label="餐厅名" value="1"></zk-option>
             <zk-option label="订单号" value="2"></zk-option>
             <zk-option label="用户电话" value="3"></zk-option>
