@@ -46,6 +46,17 @@ export default {
         ]
       },
       {
+        label: 'Notice 通知',
+        index: '/notice',
+        icon: 'fa fa-lg fa-fw fa-bars',
+        childers: [
+          {
+            label: 'MessageBox 弹框',
+            index: '/notice/message-box'
+          }
+        ]
+      },
+      {
         label: 'Others 其他',
         index: '/others',
         icon: 'fa fa-lg fa-fw fa-bars',

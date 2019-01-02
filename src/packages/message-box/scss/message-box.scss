@@ -1,0 +1,28 @@
+
+@import '../../theme-chalk/variables.scss';
+
+.el-message-box.zk-message-box {
+  border-radius: 0;
+  border: none;
+  &.el-message-box--center {
+    padding-bottom: 20px;
+  }
+  .el-message-box__header {
+    color: #FFFFFF;
+    padding: 0 20px;
+    height: 44px;
+    line-height: 44px;
+    background: linear-gradient(180deg, $--color-primary, mix($--color-primary, black, 80%));
+    .el-message-box__title {
+      color: #FFFFFF;
+      font-size: 16px;
+      line-height: inherit;
+    }
+    .el-message-box__headerbtn {
+      top: 14px;
+      .el-message-box__close {
+        color: #FFFFFF;
+      }
+    }
+  }
+}

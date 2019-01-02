@@ -1,6 +1,6 @@
 {
   "name": "vue-zk-ui",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "lib/index.js",
   "scripts": {
     "serve": "vue-cli-service serve --port 8100",
