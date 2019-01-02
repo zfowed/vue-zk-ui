@@ -1,5 +1,6 @@
 
 @import '../../theme-chalk/variables.scss';
+@import "~element-ui/packages/theme-chalk/src/message-box";
 
 .el-message-box.zk-message-box {
   border-radius: 0;

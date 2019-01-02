@@ -6,7 +6,7 @@ ButtonGroup.name = 'ZkButtonGroup'
 export default ButtonGroup
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import '../../theme-chalk/variables.scss';
 @import "~element-ui/packages/theme-chalk/src/button-group";
 .el-button-group .el-button {

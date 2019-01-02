@@ -1,6 +1,6 @@
-import MessageBox from 'element-ui/lib/message-box'
-
 import './scss/message-box.scss'
+
+import MessageBox from 'element-ui/lib/message-box'
 
 MessageBox.setDefaults({
   center: true

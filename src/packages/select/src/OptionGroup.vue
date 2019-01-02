@@ -6,7 +6,7 @@ OptionGroup.name = 'ZkOptionGroup'
 export default OptionGroup
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import '../../theme-chalk/variables.scss';
 @import "~element-ui/packages/theme-chalk/src/option-group";
 </style>

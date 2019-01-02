@@ -67,14 +67,15 @@
   </app-page>
 </template>
 
-<style lang="scss" scoped>
-.el-row {
-  margin-bottom: 20px;
-}
-</style>
-
 <script>
+import Select from '@/packages/select'
+import Option from '@/packages/option'
+
 export default {
+  components: {
+    'zk-select': Select,
+    'zk-option': Option
+  },
   data () {
     return Object.assign({
       value: '',

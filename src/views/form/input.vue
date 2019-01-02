@@ -27,17 +27,17 @@
     </app-case>
 
     <app-case title="复合型输入框">
-      <el-row>
+      <app-row>
         <zk-input placeholder="请输入内容">
           <template slot="prepend">Http://</template>
         </zk-input>
-      </el-row>
-      <el-row>
+      </app-row>
+      <app-row>
         <zk-input placeholder="请输入内容">
           <template slot="append">.com</template>
         </zk-input>
-      </el-row>
-      <el-row>
+      </app-row>
+      <app-row>
         <zk-input placeholder="请输入内容">
           <zk-select style="width: 120px;" value="1" slot="prepend" placeholder="请选择">
             <zk-option label="餐厅名" value="1"></zk-option>
@@ -46,7 +46,7 @@
           </zk-select>
           <zk-button slot="append" icon="el-icon-search"></zk-button>
         </zk-input>
-      </el-row>
+      </app-row>
     </app-case>
 
     <app-case title="不同尺寸">
@@ -80,6 +80,24 @@
 
   </app-page>
 </template>
+
+<script>
+import Input from '@/packages/input'
+import Autocomplete from '@/packages/autocomplete'
+import Button from '@/packages/button'
+import Select from '@/packages/select'
+import Option from '@/packages/option'
+
+export default {
+  components: {
+    'zk-input': Input,
+    'zk-autocomplete': Autocomplete,
+    'zk-button': Button,
+    'zk-select': Select,
+    'zk-option': Option
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .el-row {

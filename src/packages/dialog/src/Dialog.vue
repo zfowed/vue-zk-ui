@@ -25,13 +25,10 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-@import '../../theme-chalk/variables.scss';
-@import "~element-ui/packages/theme-chalk/src/dialog";
-</style>
-
 <style lang="scss">
 @import '../../theme-chalk/variables.scss';
+@import "~element-ui/packages/theme-chalk/src/dialog";
+
 .el-dialog.zk-dialog {
   border-radius: 0;
   .el-dialog__header {

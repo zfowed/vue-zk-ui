@@ -9,8 +9,14 @@
 </template>
 
 <script>
+import 'element-ui/lib/theme-chalk/card.css'
+import { Card } from 'element-ui'
+
 export default {
   name: 'Case',
+  components: {
+    'el-card': Card
+  },
   props: {
     title: String,
     description: String

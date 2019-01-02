@@ -31,13 +31,13 @@
     <zk-dialog title="收货地址" :visible.sync="dialogFormVisible">
       <el-form :model="form" label-width="80px">
         <el-form-item label="活动名称">
-          <el-input v-model="form.name" autocomplete="off"></el-input>
+          <zk-input v-model="form.name" autocomplete="off"></zk-input>
         </el-form-item>
         <el-form-item label="活动区域">
-          <el-select v-model="form.region" placeholder="请选择活动区域">
-            <el-option label="区域一" value="shanghai"></el-option>
-            <el-option label="区域二" value="beijing"></el-option>
-          </el-select>
+          <zk-select v-model="form.region" placeholder="请选择活动区域">
+            <zk-option label="区域一" value="shanghai"></zk-option>
+            <zk-option label="区域二" value="beijing"></zk-option>
+          </zk-select>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -50,7 +50,30 @@
 </template>
 
 <script>
+
+import 'element-ui/lib/theme-chalk/table.css'
+import 'element-ui/lib/theme-chalk/table-column.css'
+import 'element-ui/lib/theme-chalk/form.css'
+import { Table, TableColumn, Form, FormItem } from 'element-ui'
+
+import Button from '@/packages/button'
+import Input from '@/packages/input'
+import Select from '@/packages/select'
+import Option from '@/packages/option'
+import Dialog from '@/packages/dialog'
+
 export default {
+  components: {
+    'zk-input': Input,
+    'zk-dialog': Dialog,
+    'zk-button': Button,
+    'zk-select': Select,
+    'zk-option': Option,
+    'el-table': Table,
+    'el-table-column': TableColumn,
+    'el-form': Form,
+    'el-form-item': FormItem
+  },
   data () {
     return {
       dialogVisible: false,

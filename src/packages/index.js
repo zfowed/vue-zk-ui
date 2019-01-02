@@ -1,3 +1,4 @@
+import Icon from './icon'
 import Button from './button'
 import ButtonGroup from './button-group'
 import Input from './input'
@@ -9,6 +10,7 @@ import Cascader from './cascader'
 import Dialog from './dialog'
 
 const components = [
+  Icon,
   Button,
   ButtonGroup,
   Input,
@@ -31,6 +33,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export {
+  Icon,
   Button,
   ButtonGroup,
   Input,

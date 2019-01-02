@@ -25,7 +25,12 @@
 </template>
 
 <script>
+import Cascader from '@/packages/cascader'
+
 export default {
+  components: {
+    'zk-cascader': Cascader
+  },
   data () {
     return Object.assign({
       selectedOptions: [],

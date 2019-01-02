@@ -1,9 +1,15 @@
+import Layout from './Layout'
 import Page from './Page'
 import Case from './Case'
+import Row from './Row'
+import Col from './Col'
 
 const components = [
+  Layout,
   Page,
-  Case
+  Case,
+  Row,
+  Col
 ]
 
 const install = function (Vue) {
@@ -13,8 +19,11 @@ const install = function (Vue) {
 }
 
 export {
+  Layout,
   Page,
-  Case
+  Case,
+  Row,
+  Col
 }
 
 export default {

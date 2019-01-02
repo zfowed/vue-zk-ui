@@ -6,8 +6,9 @@ Autocomplete.name = 'ZkAutocomplete'
 export default Autocomplete
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import '../../theme-chalk/variables.scss';
+@import "~element-ui/packages/theme-chalk/src/icon";
 @import "~element-ui/packages/theme-chalk/src/autocomplete";
 
 .el-autocomplete {
