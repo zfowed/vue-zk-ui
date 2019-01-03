@@ -18,8 +18,12 @@
 
 <script>
 import MessageBox from '@/packages/message-box'
+import Button from '@/packages/button'
 
 export default {
+  components: {
+    'zk-button': Button
+  },
   data () {
     return {
       gridData: []

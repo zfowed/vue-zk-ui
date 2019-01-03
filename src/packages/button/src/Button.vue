@@ -17,6 +17,14 @@ export default Button
 
   border-radius: 0 !important;
 
+  &.is-circle {
+    border-radius: 50% !important;
+  }
+
+  &.is-round {
+    border-radius: 20px !important;
+  }
+
   &:not(.is-disabled) {
     &.el-button--default[raised] {
       $color: #FFFFFF;

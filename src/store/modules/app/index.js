@@ -46,6 +46,17 @@ export default {
         ]
       },
       {
+        label: 'Data 数据',
+        index: '/data',
+        icon: 'fa fa-lg fa-fw fa-bars',
+        childers: [
+          {
+            label: 'Pagination 分页',
+            index: '/data/pagination'
+          }
+        ]
+      },
+      {
         label: 'Notice 通知',
         index: '/notice',
         icon: 'fa fa-lg fa-fw fa-bars',

@@ -37,6 +37,11 @@ export default new Router({
     },
 
     {
+      path: '/data/pagination',
+      component: () => import(/* webpackChunkName: "views_data_pagination" */ './views/data/pagination.vue')
+    },
+
+    {
       path: '/notice/message-box',
       component: () => import(/* webpackChunkName: "views_notice_message-box" */ './views/notice/message-box.vue')
     },

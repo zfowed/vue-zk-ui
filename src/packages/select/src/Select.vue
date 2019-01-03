@@ -29,7 +29,7 @@ export default {
 
 .el-select {
   .el-input {
-    input {
+    .el-input__inner {
       border-radius: 0;
       padding-right: $--input-height;
     }
@@ -92,8 +92,9 @@ export default {
   }
 }
 
-.el-select-dropdown.el-popper.zk-select-dropdown {
-  margin-top: 0;
+.el-select-dropdown.el-popper {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   border-radius: 0;
   border: none;
   .el-select-dropdown__list {
