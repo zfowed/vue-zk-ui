@@ -51,6 +51,10 @@ export default {
         icon: 'fa fa-lg fa-fw fa-bars',
         childers: [
           {
+            label: 'Tag 标签',
+            index: '/data/tag'
+          },
+          {
             label: 'Pagination 分页',
             index: '/data/pagination'
           }

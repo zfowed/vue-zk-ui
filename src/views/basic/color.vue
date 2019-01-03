@@ -50,7 +50,7 @@
       <app-col :span="6">
         <div class="demo-color-box bg-text-regular">
           <span>常规文字</span>
-          <div class="value">#606266</div>
+          <div class="value">#656565</div>
         </div>
       </app-col>
       <app-col :span="6">

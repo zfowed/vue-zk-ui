@@ -40,6 +40,10 @@ export default new Router({
       path: '/data/pagination',
       component: () => import(/* webpackChunkName: "views_data_pagination" */ './views/data/pagination.vue')
     },
+    {
+      path: '/data/tag',
+      component: () => import(/* webpackChunkName: "views_data_tag" */ './views/data/tag.vue')
+    },
 
     {
       path: '/notice/message-box',

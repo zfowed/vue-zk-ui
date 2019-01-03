@@ -9,6 +9,7 @@ import OptionGroup from './option-group'
 import Cascader from './cascader'
 import Dialog from './dialog'
 import Pagination from './pagination'
+import Tag from './tag'
 
 const components = [
   Icon,
@@ -21,7 +22,8 @@ const components = [
   OptionGroup,
   Cascader,
   Dialog,
-  Pagination
+  Pagination,
+  Tag
 ]
 
 const install = function (Vue) {
@@ -45,7 +47,8 @@ export {
   OptionGroup,
   Cascader,
   Dialog,
-  Pagination
+  Pagination,
+  Tag
 }
 
 export default {
