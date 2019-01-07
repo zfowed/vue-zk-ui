@@ -10,6 +10,7 @@ import Cascader from './cascader'
 import Dialog from './dialog'
 import Pagination from './pagination'
 import Tag from './tag'
+import MessageBox from './message-box'
 
 const components = [
   Icon,
@@ -23,12 +24,17 @@ const components = [
   Cascader,
   Dialog,
   Pagination,
-  Tag
+  Tag,
+  MessageBox
 ]
 
 const install = function (Vue) {
   components.forEach(component => {
     Vue.component(component.name, component)
+    Vue.prototype.$msgbox = MessageBox
+    Vue.prototype.$alert = MessageBox.alert
+    Vue.prototype.$confirm = MessageBox.confirm
+    Vue.prototype.$prompt = MessageBox.prompt
   })
 }
 
@@ -48,7 +54,8 @@ export {
   Cascader,
   Dialog,
   Pagination,
-  Tag
+  Tag,
+  MessageBox
 }
 
 export default {

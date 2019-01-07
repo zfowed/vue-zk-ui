@@ -8,7 +8,6 @@ if (process.env.BUILD_MODE === 'packages') {
     filenameHashing: false,
     productionSourceMap: false,
     outputDir: 'lib',
-    assetsDir: 'assets',
     pages: {},
     configureWebpack: config => {
       config.output.library = 'zk'
@@ -17,9 +16,9 @@ if (process.env.BUILD_MODE === 'packages') {
       config.entry = {}
       for (const file of files) {
         const name = path.basename(path.dirname(file))
-        config.entry[`../../${name}`] = file
+        config.entry[`${name}`] = file
       }
-      config.entry[`../../index`] = `./src/packages/index`
+      config.entry[`index`] = `./src/packages/index`
       config.optimization.splitChunks.cacheGroups.vendors.test = () => false
       config.optimization.splitChunks.cacheGroups.common.test = () => false
     }
