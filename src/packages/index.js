@@ -28,7 +28,7 @@ const components = [
   MessageBox
 ]
 
-const install = function (Vue, opts) {
+const install = function (Vue, opts = {}) {
   components.forEach(component => {
     Vue.component(component.name, component)
   })
