@@ -28,14 +28,18 @@ const components = [
   MessageBox
 ]
 
-const install = function (Vue) {
+const install = function (Vue, opts) {
   components.forEach(component => {
     Vue.component(component.name, component)
-    Vue.prototype.$msgbox = MessageBox
-    Vue.prototype.$alert = MessageBox.alert
-    Vue.prototype.$confirm = MessageBox.confirm
-    Vue.prototype.$prompt = MessageBox.prompt
   })
+  Vue.prototype.$ELEMENT = {
+    size: opts.size || '',
+    zIndex: opts.zIndex || 2000
+  }
+  Vue.prototype.$msgbox = MessageBox
+  Vue.prototype.$alert = MessageBox.alert
+  Vue.prototype.$confirm = MessageBox.confirm
+  Vue.prototype.$prompt = MessageBox.prompt
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

@@ -6,7 +6,7 @@
       <app-col :span="6">
         <div class="demo-color-box bg-primary">
           <span>主色</span>
-          <div class="value">#0B7AFB</div>
+          <div class="value">#2d76ed</div>
         </div>
       </app-col>
     </app-row>
@@ -16,7 +16,7 @@
       <app-col :span="6">
         <div class="demo-color-box bg-success">
           <span>成功</span>
-          <div class="value">#67C23A</div>
+          <div class="value">#67C139</div>
         </div>
       </app-col>
       <app-col :span="6">
@@ -28,7 +28,7 @@
       <app-col :span="6">
         <div class="demo-color-box bg-danger">
           <span>危险</span>
-          <div class="value">#F56C6C</div>
+          <div class="value">#FB6041</div>
         </div>
       </app-col>
       <app-col :span="6">
@@ -88,7 +88,7 @@
       <app-col :span="6">
         <div class="demo-color-box bg-border-color-extra-light">
           <span>四级边框</span>
-          <div class="value">#f2f6fc</div>
+          <div class="value">#F8F8F8</div>
         </div>
       </app-col>
     </app-row>

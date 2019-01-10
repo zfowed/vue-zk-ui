@@ -41,6 +41,12 @@ export default {
       .el-select__caret {
         transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
       }
+      .el-icon-arrow-up {
+        transform: rotate(90deg);
+      }
+      .el-icon-arrow-up.is-reverse {
+        transform: rotate(180deg);
+      }
     }
     &:not(.is-disabled) input:hover + .el-input__suffix,
     &:not(.is-disabled) .el-input__suffix:hover {
@@ -101,12 +107,11 @@ export default {
     padding: 0;
   }
   .el-select-dropdown__item {
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid $--border-color-extra-light;
     &.hover,
     &.selected {
-      background-color: $--color-primary !important;
-      border-color: $--color-primary !important;
-      color: #FFFFFF !important;
+      background: #FFFFFF !important;
+      color: $--color-primary !important;
     }
     &:last-child {
       border-bottom: none;

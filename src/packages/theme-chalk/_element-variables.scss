@@ -14,7 +14,7 @@ $--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
 $--color-white: #fff !default;
 $--color-black: #000 !default;
 
-$--color-primary: #0B7AFB !default;
+$--color-primary: #2d76ed !default;
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
 $--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
@@ -25,9 +25,9 @@ $--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /
 $--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
 $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
 
-$--color-success: #67c23a !default;
+$--color-success: #67c139 !default;
 $--color-warning: #e6a23c !default;
-$--color-danger: #f56c6c !default;
+$--color-danger: #fb6041 !default;
 $--color-info: #909399 !default;
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
@@ -61,7 +61,7 @@ $--border-style-base: solid !default;
 $--border-color-base: #dcdfe6 !default;
 $--border-color-light: #e4e7ed !default;
 $--border-color-lighter: #ebeef5 !default;
-$--border-color-extra-light: #f2f6fc !default;
+$--border-color-extra-light: #F8F8F8 !default;
 $--border-color-hover: $--color-text-placeholder !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
 $--border-radius-base: 4px !default;
