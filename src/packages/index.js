@@ -36,7 +36,9 @@ const install = function (Vue, opts = {}) {
     zIndex: opts.zIndex || 2000
   }
   components.forEach(component => {
-    Vue.use(component)
+    if (component.install) {
+      Vue.use(component)
+    }
   })
   Vue.use(Loading.directive)
   Vue.prototype.$msgbox = MessageBox
