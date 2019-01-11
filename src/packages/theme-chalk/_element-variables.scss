@@ -58,7 +58,7 @@ $--background-color-base: #f5f7fa !default;
 -------------------------- */
 $--border-width-base: 1px !default;
 $--border-style-base: solid !default;
-$--border-color-base: #dcdfe6 !default;
+$--border-color-base: #DCDCDC !default;
 $--border-color-light: #e4e7ed !default;
 $--border-color-lighter: #ebeef5 !default;
 $--border-color-extra-light: #F8F8F8 !default;
@@ -259,9 +259,9 @@ $--alert-icon-large-size: 28px !default;
 
 /* Message Box
 -------------------------- */
-$--msgbox-width: 420px !default;
-$--msgbox-border-radius: 4px !default;
-$--msgbox-font-size: $--font-size-large !default;
+$--msgbox-width: 440px !default;
+$--msgbox-border-radius: 0px !default;
+$--msgbox-font-size: 16px !default;
 $--msgbox-content-font-size: $--font-size-base !default;
 $--msgbox-content-color: $--color-text-regular !default;
 $--msgbox-error-font-size: 12px !default;

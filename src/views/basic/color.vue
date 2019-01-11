@@ -70,7 +70,7 @@
       <app-col :span="6">
         <div class="demo-color-box bg-border-color-base">
           <span>一级边框</span>
-          <div class="value">#dcdfe6</div>
+          <div class="value">#DCDCDC</div>
         </div>
       </app-col>
       <app-col :span="6">

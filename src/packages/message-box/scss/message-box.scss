@@ -2,27 +2,21 @@
 @import '../../theme-chalk/variables.scss';
 @import "~element-ui/packages/theme-chalk/src/message-box";
 
-.el-message-box.zk-message-box {
-  border-radius: 0;
-  border: none;
-  &.el-message-box--center {
-    padding-bottom: 20px;
-  }
+.el-message-box {
   .el-message-box__header {
-    color: #FFFFFF;
-    padding: 0 20px;
-    height: 44px;
-    line-height: 44px;
-    background: linear-gradient(180deg, $--color-primary, mix($--color-primary, black, 80%));
+    padding-top: 15px;
+    border-bottom: 1px solid $--border-color-base;
     .el-message-box__title {
-      color: #FFFFFF;
-      font-size: 16px;
-      line-height: inherit;
+      text-align: left;
+      display: inline;
     }
-    .el-message-box__headerbtn {
-      top: 14px;
-      .el-message-box__close {
-        color: #FFFFFF;
+  }
+  .el-message-box__btns {
+    direction: rtl;
+    .el-button {
+      margin-left: 10px;
+      &:last-child {
+        margin-left: 0;
       }
     }
   }

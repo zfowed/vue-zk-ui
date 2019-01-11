@@ -66,6 +66,10 @@ export default {
         icon: 'fa fa-lg fa-fw fa-bars',
         childers: [
           {
+            label: 'Loading 加载层',
+            index: '/notice/loading'
+          },
+          {
             label: 'MessageBox 弹框',
             index: '/notice/message-box'
           }

@@ -49,6 +49,10 @@ export default new Router({
       path: '/notice/message-box',
       component: () => import(/* webpackChunkName: "views_notice_message-box" */ './views/notice/message-box.vue')
     },
+    {
+      path: '/notice/loading',
+      component: () => import(/* webpackChunkName: "views_notice_loading" */ './views/notice/loading.vue')
+    },
 
     {
       path: '/others/dialog',

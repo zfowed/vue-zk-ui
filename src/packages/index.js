@@ -11,6 +11,7 @@ import Dialog from './dialog'
 import Pagination from './pagination'
 import Tag from './tag'
 import MessageBox from './message-box'
+import Loading from './loading'
 
 const components = [
   Icon,
@@ -25,22 +26,26 @@ const components = [
   Dialog,
   Pagination,
   Tag,
-  MessageBox
+  MessageBox,
+  Loading
 ]
 
 const install = function (Vue, opts = {}) {
-  components.forEach(component => {
-    Vue.component(component.name, component)
-  })
   Vue.prototype.$ELEMENT = {
     size: opts.size || '',
     zIndex: opts.zIndex || 2000
   }
+  components.forEach(component => {
+    Vue.use(component)
+  })
+  Vue.use(Loading.directive)
   Vue.prototype.$msgbox = MessageBox
   Vue.prototype.$alert = MessageBox.alert
   Vue.prototype.$confirm = MessageBox.confirm
   Vue.prototype.$prompt = MessageBox.prompt
+  Vue.prototype.$loading = Loading.service
 }
+// Loading
 
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
@@ -59,7 +64,8 @@ export {
   Dialog,
   Pagination,
   Tag,
-  MessageBox
+  MessageBox,
+  Loading
 }
 
 export default {

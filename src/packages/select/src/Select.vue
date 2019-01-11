@@ -35,7 +35,7 @@ export default {
     }
     .el-input__suffix {
       right: 0;
-      background-color: #dcdfe6;
+      background-color: #DCDCDC;
       width: $--input-height;
       transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
       .el-select__caret {
