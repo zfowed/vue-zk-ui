@@ -1,10 +1,10 @@
 import './scss/message-box.scss'
 
-import { MessageBox } from 'element-ui'
+import MessageBox from 'element-ui/packages/message-box'
 
 MessageBox.setDefaults({
-  center: true,
-  cancelButtonClass: 'el-message-box__btns-cancel'
+  title: '提示',
+  center: true
 })
 
 export default MessageBox
