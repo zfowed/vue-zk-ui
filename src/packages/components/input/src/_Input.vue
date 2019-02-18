@@ -6,7 +6,7 @@ Input.name = 'ZkInput'
 export default Input
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import '../../../theme-chalk/variables.scss';
 @import "~element-ui/packages/theme-chalk/src/input";
 

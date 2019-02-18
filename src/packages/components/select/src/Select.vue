@@ -1,5 +1,5 @@
 <template>
-  <el-select :popper-class="'zk-select-dropdown ' + popperClass" :value="value" v-bind="$attrs" v-on="$listeners">
+  <el-select class="zk-select" :popper-class="'zk-select-dropdown ' + popperClass" :value="value" v-bind="$attrs" v-on="$listeners">
     <slot v-for="($slot, key) in $slots" :slot="key" :name="key"></slot>
   </el-select>
 </template>
@@ -22,12 +22,12 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../../../theme-chalk/variables.scss';
 @import "~element-ui/packages/theme-chalk/src/icon";
 @import "~element-ui/packages/theme-chalk/src/select";
 
-.el-select {
+.zk-select.el-select {
   .el-input {
     .el-input__inner {
       border-radius: 0;
@@ -98,7 +98,7 @@ export default {
   }
 }
 
-.el-select-dropdown.el-popper {
+.zk-select-dropdown.el-select-dropdown.el-popper {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   border-radius: 0;
