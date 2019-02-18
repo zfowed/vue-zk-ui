@@ -1,16 +1,35 @@
 <template>
-  <app-layout :title="title" :nav="nav" />
+  <zk-layout
+    :title="title"
+    :nav-data="nav"
+    :breadcrumb-data="breadcrumb">
+    <router-view />
+  </zk-layout>
 </template>
 
 <script>
+import Layout from '@/packages/components/layout'
 
 import { createNamespacedHelpers } from 'vuex'
 const { mapState: appState } = createNamespacedHelpers('app')
 
 export default {
   name: 'App',
+  components: {
+    'zk-layout': Layout
+  },
   computed: {
-    ...appState(['title', 'nav'])
+    ...appState(['title', 'nav']),
+    breadcrumb () {
+      return this.$route.matched.filter(route => {
+        return route.meta.title
+      }).map(route => {
+        return {
+          label: route.meta.title,
+          href: route.path
+        }
+      })
+    }
   }
 }
 </script>

@@ -12,7 +12,7 @@ if (process.env.BUILD_MODE === 'packages') {
     configureWebpack: config => {
       config.output.library = 'zk'
       config.output.libraryTarget = 'umd'
-      const files = glob.sync(path.join(__dirname, './src/packages/*/index.js'))
+      const files = glob.sync(path.join(__dirname, './src/packages/components/*/index.js'))
       config.entry = {}
       for (const file of files) {
         const name = path.basename(path.dirname(file))

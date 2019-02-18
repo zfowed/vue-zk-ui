@@ -8,80 +8,61 @@ export default {
     collapse: true,
     nav: [
       {
-        label: 'Basic 基本',
+        label: '基本',
         index: '/basic',
-        icon: 'fa fa-lg fa-fw fa-bars',
         childers: [
           {
-            label: 'Color 颜色',
+            label: '布局',
+            index: '/basic/layout'
+          },
+          {
+            label: '颜色',
             index: '/basic/color'
           },
           {
-            label: 'Typography 字体',
+            label: '字体',
             index: '/basic/typography'
           },
           {
-            label: 'Button 按钮',
+            label: '按钮',
             index: '/basic/button'
           }
         ]
       },
       {
-        label: 'Form 表单',
+        label: '表单',
         index: '/form',
-        icon: 'fa fa-lg fa-fw fa-bars',
         childers: [
           {
-            label: 'Input 输入框',
+            label: '输入框',
             index: '/form/input'
           },
           {
-            label: 'Select 下拉框',
+            label: '下拉框',
             index: '/form/select'
-          },
-          {
-            label: 'Cascader 级联选择器',
-            index: '/form/cascader'
           }
         ]
       },
       {
-        label: 'Data 数据',
-        index: '/data',
-        icon: 'fa fa-lg fa-fw fa-bars',
-        childers: [
-          {
-            label: 'Tag 标签',
-            index: '/data/tag'
-          },
-          {
-            label: 'Pagination 分页',
-            index: '/data/pagination'
-          }
-        ]
-      },
-      {
-        label: 'Notice 通知',
+        label: '通知',
         index: '/notice',
-        icon: 'fa fa-lg fa-fw fa-bars',
         childers: [
           {
-            label: 'Loading 加载层',
+            label: '加载层',
             index: '/notice/loading'
           },
           {
-            label: 'MessageBox 弹框',
+            label: '弹框',
             index: '/notice/message-box'
           }
         ]
       },
       {
-        label: 'Others 其他',
+        label: '其他',
         index: '/others',
-        icon: 'fa fa-lg fa-fw fa-bars',
         childers: [
           {
-            label: 'Dialog 对话框',
+            label: '对话框',
             index: '/others/dialog'
           }
         ]

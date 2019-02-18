@@ -68,8 +68,8 @@
 </template>
 
 <script>
-import Select from '@/packages/select'
-import Option from '@/packages/option'
+import Select from '@/packages/components/select'
+import Option from '@/packages/components/option'
 
 export default {
   components: {

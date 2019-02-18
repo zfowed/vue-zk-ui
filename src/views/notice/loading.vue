@@ -28,8 +28,8 @@
 
 <script>
 import Vue from 'vue'
-import Loading from '@/packages/loading'
-import Button from '@/packages/button'
+import Loading from '@/packages/components/loading'
+import Button from '@/packages/components/button'
 
 Vue.use(Loading)
 

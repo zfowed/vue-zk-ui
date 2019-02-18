@@ -56,11 +56,11 @@ import 'element-ui/lib/theme-chalk/table-column.css'
 import 'element-ui/lib/theme-chalk/form.css'
 import { Table, TableColumn, Form, FormItem } from 'element-ui'
 
-import Button from '@/packages/button'
-import Input from '@/packages/input'
-import Select from '@/packages/select'
-import Option from '@/packages/option'
-import Dialog from '@/packages/dialog'
+import Button from '@/packages/components/button'
+import Input from '@/packages/components/input'
+import Select from '@/packages/components/select'
+import Option from '@/packages/components/option'
+import Dialog from '@/packages/components/dialog'
 
 export default {
   components: {

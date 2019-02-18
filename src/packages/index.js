@@ -1,45 +1,35 @@
-import Icon from './icon'
-import Button from './button'
-import ButtonGroup from './button-group'
-import Input from './input'
-import Autocomplete from './autocomplete'
-import Select from './select'
-import Option from './option'
-import OptionGroup from './option-group'
-import Cascader from './cascader'
-import Dialog from './dialog'
-import Pagination from './pagination'
-import Tag from './tag'
-import MessageBox from './message-box'
-import Loading from './loading'
+import Button from './components/button'
+import Input from './components/input'
+import Select from './components/select'
+import Option from './components/option'
+import OptionGroup from './components/option-group'
+import Dialog from './components/dialog'
+import MessageBox from './components/message-box'
+import Loading from './components/loading'
 
-const components = [
-  Icon,
+const installs = [
   Button,
-  ButtonGroup,
   Input,
-  Autocomplete,
   Select,
   Option,
   OptionGroup,
-  Cascader,
   Dialog,
-  Pagination,
-  Tag,
   MessageBox,
   Loading
 ]
 
 const install = function (Vue, opts = {}) {
+
   Vue.prototype.$ELEMENT = {
     size: opts.size || '',
     zIndex: opts.zIndex || 2000
   }
-  components.forEach(component => {
-    if (component.install) {
-      Vue.use(component)
+  installs.forEach(item => {
+    if (item.install) {
+      Vue.use(item)
     }
   })
+
   Vue.use(Loading.directive)
   Vue.prototype.$msgbox = MessageBox
   Vue.prototype.$alert = MessageBox.alert
@@ -54,22 +44,24 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export {
-  Icon,
   Button,
-  ButtonGroup,
   Input,
-  Autocomplete,
   Select,
   Option,
   OptionGroup,
-  Cascader,
   Dialog,
-  Pagination,
-  Tag,
   MessageBox,
   Loading
 }
 
 export default {
-  install
+  install,
+  Button,
+  Input,
+  Select,
+  Option,
+  OptionGroup,
+  Dialog,
+  MessageBox,
+  Loading
 }

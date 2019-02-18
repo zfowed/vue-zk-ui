@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import MessageBox from '@/packages/message-box'
-import Button from '@/packages/button'
+import MessageBox from '@/packages/components/message-box'
+import Button from '@/packages/components/button'
 
 export default {
   components: {
